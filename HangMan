@@ -5,7 +5,6 @@ word = ""
 def find_word():
     with open("sowpods.txt", "r") as f:
         words = f.readlines()
-        print(words)
         global word
         index = random.randint(0, len(words)-1)
         word = words[index].strip()
